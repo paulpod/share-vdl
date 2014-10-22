@@ -1,0 +1,1477 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>View Driving Record</title>
+
+    <!--[if gt IE 8]><!-->
+    <link href="/assets/gds/application-ac5c76582c33fd730fdc2704dc401728.css" media="screen" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+    <!--[if IE 6]>
+    <link href="/assets/gds/application-ie6-d77048f3c3c8d29dd60fcdadd1fc57e2.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link href="/assets/gds/application-ie7-d4679c8e213c0a8a0ab0a4ddf46487b9.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link href="/assets/gds/application-ie8-7685de5b79d3e4394e3a97136743392d.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link href="/assets/gds/print-546864271280c5a1b3d7e8a0bbe71896.css" media="print" rel="stylesheet" type="text/css">
+    <!--[if IE 8]>
+    <!--
+    <script type="text/javascript">
+        (function(){if(window.opera){return;}
+        setTimeout(function(){var a=document,g,b={families:(g=
+        ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-a7369d48db4c172b4371ab9def59c5c9.css"]},
+        c="https://assets.digital.cabinet-office.gov.uk/static/libs/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+        e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+        ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+        .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+    </script>
+              -->
+    <![endif]-->
+
+    <!--[if gte IE 9]>
+      <!--><link href="/assets/gds/fonts-607c54f71c7c1f98257595cedaa13a34.css" media="all" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+
+    <script src="/assets/gds/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
+    <script defer="" src="/assets/gds/application-c7dbb181d219cf9ced8ade278b3b39ad.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+    <script src="/assets/gds/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
+    <![endif]-->
+
+    
+<link rel="shortcut icon" href="/assets/gds/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon">
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/gds/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/gds/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/gds/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="/assets/gds/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="/assets/gds/frontend.js" type="text/javascript"></script>
+    <link title="Search" rel="search" type="application/opensearchdescription+xml" href="/search/opensearch.xml">
+
+    <!--[if gt IE 8]><!-->
+    <link href="/assets/gds/application-c2ffe841ef43190446b7913524259db2.css" media="screen" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+
+    <link rel="canonical" href="/">
+    <meta name="description" content="GOV.UK - The new place to find government services and information replacing Directgov and Business Link - Simpler, clearer, faster">
+    <!--[if IE 6]><link href="/assets/gds/application-ie6-bbd986c9ecbc69fdad7841d65a1f6bc8.css" media="screen" rel="stylesheet" type="text/css" /><![endif]--><!--[if IE 7]><link href="https://assets.digital.cabinet-office.gov.uk/frontend/application-ie7-d393955db3f1a94bafde90a877ffe471.css" media="screen" rel="stylesheet" type="text/css" /><![endif]--><!--[if IE 8]><link href="https://assets.digital.cabinet-office.gov.uk/frontend/application-ie8-a1863cc97e07da31987ee0376e34052f.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <link rel="stylesheet" href="/assets/application.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    var pageStart = new Date();
+
+    //Preview on local machine
+    if(/localhost/gim.test(location.href)) {
+        ga('create', 'UA-44719962-1', {
+            'cookieDomain': 'none',
+            'allowLinker': true,
+            'storage': 'none'
+        });
+    }
+
+    //Preview on kainos server
+    if(/kainos\.com/gim.test(location.href)) {
+        ga('create', 'UA-44719962-1', {
+            'cookieDomain': 'kainos.com',
+            'allowLinker': true,
+            'storage': 'none'
+        });
+    }
+
+    //Beta via Ops portal
+    if(/driver\.iep\.dvla/gim.test(location.href)) {
+        ga('create', 'UA-44719962-6', {
+            'cookieDomain': 'none',
+            'allowLinker': true,
+            'storage': 'none'
+        });
+    }
+
+    //Beta via Customer portal
+    if(/viewdrivingrecord\.service\.gov\.uk/gim.test(location.href)) {
+        ga('create', 'UA-44719962-6', {
+            'cookieDomain': 'service.gov.uk',
+            'allowLinker': true,
+            'storage': 'none'
+        });
+    }
+
+    ga('set','anonymizeIp',true)
+    ga('send', 'pageview');
+</script>
+</head>
+<body class="mainstream no-js">
+
+
+<input id="reloadValue" type="hidden" name="reloadValue" value="" />
+<script src="/assets/javascripts/idle-timer.min.js"></script>
+<script src="/assets/javascripts/timerUtilities.js"></script>
+<script>
+  var timerUtilities = new TimerUtilities();
+  var url = '/expired';
+  timerUtilities.checkForExpiration(jQuery('body'), jQuery('#reloadValue'));
+  timerUtilities.setPageExpiration($(document), 300000, url);
+</script>
+
+<script type="text/javascript">
+document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+document.body.className = document.body.className.replace('no-js','');
+</script>
+<a href="#content" class="visuallyhidden">Skip to main content</a>
+
+
+<header role="banner" id="global-header">
+    <div class="header-wrapper">
+        <div class="header-global">
+            <div class="header-logo">
+                <a href="https://www.gov.uk" title="Go to the gov.uk homepage" id="logo" class="content">
+                <img src="/assets/img/gov.uk_logotype_crown.png" alt="GOV.UK"></img>GOV.UK</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="beta-warning">
+    <p>
+        <b>BETA:</b> This is a trial service - your <a href="https://www.snapsurveys.com/wh/s.asp?k=139530243033" target="_blank">feedback</a> will help us to improve it.
+    </p>
+</div>
+
+
+<div id="wrapper" class="transaction service">
+    <main id="content" role="main" class="group">
+        <article>
+            
+<div id="driverDetails" class="header-wrap" data-assets-img-root="/assets/img" data-accordian-show-text="Show information" data-accordian-hide-text="Hide information">
+    <header class="page-header group">
+        <div class="hgroup">
+            <h1><span>Service</span>View driving record</h1>
+            <span class="logout-btn-wrap">
+                <a href="/logout" id="backButton" class="logout button">Logout</a>
+            </span>
+        </div>
+    </header>
+</div>
+
+
+
+
+<div class="tabbed-view">
+<nav class="activity-navigation">
+    <ul class="tabs">
+        <li><a href="#your-details" class="current">Your details</a></li>
+        <li><a href="#vehicles">Vehicles you can drive</a></li>
+        <li><a href="#points">Penalties and disqualifications</a></li>
+    </ul>
+</nav>
+
+
+<div id="your-details" class="">
+    <div>
+        <p>To update your details or renew your licence visit the <a href="https://www.gov.uk/browse/driving/driving-licences" target="_blank">driver licence</a> section on GOV.UK</p>
+    </div>
+
+    <h2 class="visuallyhidden">Personal Details</h2>
+    <dl>
+        <dt class="visually hidden">Name</dt>
+        <dd class="name">Mr PAUL JOHN  CLEGHORN</dd>
+        <dt>Date of birth</dt>
+        <dd class="dob-field">2 Oct 1973</dd>
+        <dt>Gender</dt>
+        <dd class="gender-field">Male</dd>
+        <dt>Address</dt>
+        <dd class="address-field">
+             Ty Newydd Farm     Pontyberem LLANELLI <span class="postcode">SA15 5LP</span>
+        </dd>
+    </dl>
+    <h2>Licence details</h2>
+    <dl>
+        <dt>Driving status</dt>
+        <dd class="licence-status-field">You have a full driving licence</dd>
+        
+        <dt>Licence valid from</dt>
+        <dd class="licence-valid-from-field">15 Oct 2013</dd>
+        
+        
+        <dt>Licence valid to</dt>
+        <dd class="licence-valid-to-field">22 Apr 2019</dd>
+        
+        <dt>Driving licence number</dt>
+        <dd class="dln-field">CLEGH710023PJ9BL</dd>
+        
+        <dt>Licence issue number</dt>
+        <dd class="issue-number-field">12</dd>
+        
+    </dl>
+</div>
+
+
+
+
+<div id="vehicles" class="">
+    
+    
+    <div>
+        <p>To find out more visit the <a href="https://www.gov.uk/driving-licence-categories" target="_blank">driving licence categories</a> section on GOV.UK</p>
+    </div>
+
+    
+    <h2>Vehicles you can drive</h2>
+    <ul class="accordion" id="fullEntitlements">
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catAM" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : AM</strong></li>
+                                
+                                <li class="valid-dates">Start date: 15 Oct 2013</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category AM vehicle" src="/assets/img/categories/AM.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catAM" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 15 Oct 2013</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive 2-wheel vehicles or 3-wheel vehicles with a maximum design speed of over 25km/h and not more than 45km/h. Light quadricycles with an unladen mass of not more than 350kg, not including the mass of the batteries in the case of electric vehicles, whose maximum speed is over 25km/h and not more than 45km/h</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catA" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : A</strong></li>
+                                
+                                <li class="valid-dates">Start date: 19 Jan 2013</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category A vehicle" src="/assets/img/categories/A.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catA" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 19 Jan 2013</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive a motorcycle of a power exceeding 35kW or with a power to weight ratio exceeding 0.2kW per kg, or A motorcycle of a power not exceeding 35kW with a power to weight ratio not exceeding 0.2kW per kg and derived from a vehicle of more than double its power. A motor tricycle with a power exceeding 15kW</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                            <li>
+                                Limited to tricycles</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catB1" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : B1</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category B1 vehicle" src="/assets/img/categories/B1.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catB1" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive motor vehicles with 4 wheels up to 400kg unladen or 550kg if they're designed for carrying goods</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catB" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : B</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category B vehicle" src="/assets/img/categories/B.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catB" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive vehicles up to 3,500kg Maximum Authorised Mass (MAM) with up to 8 passenger seats and a driver (with a trailer up to 750kg). You can also tow heavier trailers if the total weight of vehicle and trailer isn't more than 3,500kg. Physically disabled drivers with provisional category B entitlement will also have provisional entitlement to ride category A1 or A motor tricycles. Able-bodied drivers can no longer ride motor tricycles with a provisional category B licence</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catBE" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : BE</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category BE vehicle" src="/assets/img/categories/BE.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catBE" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive vehicles up to 3,500kg Maximum Authorised Mass (MAM) with up to 8 passenger seats and a driver with a trailer weighing up to 3,500kg</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catC1" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : C1</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category C1 vehicle" src="/assets/img/categories/C1.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catC1" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive vehicles weighing between 3,500 and 7,500kg (with a trailer up to 750kg), with no more than 8 passengers and a driver</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catC1E" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : C1E</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category C1E vehicle" src="/assets/img/categories/C1E.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catC1E" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive vehicles weighing between 3,500 and 7,500kg (with a trailer over 750kg), with no more than 8 passengers and a driver.  The combined weight of both can't exceed 12,000kg</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                            <li>
+                                <strong>107</strong>
+                                
+                                Not more than 8250kg</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catD1" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : D1</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category D1 vehicle" src="/assets/img/categories/D1.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catD1" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive vehicles with no more than 16 passenger seats and a driver and with a maximum length not exceeding 8 metres with a trailer up to 750kg</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                            <li>
+                                <strong>101</strong>
+                                
+                                Not for Hire or reward</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catD1E" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : D1E</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category D1E vehicle" src="/assets/img/categories/D1E.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catD1E" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive vehicles with no more than 16 passenger seats and a driver and with a maximum length not exceeding 8 metres with a trailer over 750 kg, provided that the Maximum Authorised Mass (MAM) of the combination formed does not exceed 12,000kg</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                            <li>
+                                <strong>101</strong>
+                                
+                                Not for Hire or reward</li>
+                            
+                            <li>
+                                <strong>119</strong>
+                                
+                                Weight limit does not apply</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catF" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : F</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category F vehicle" src="/assets/img/categories/F.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catF" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive an agricultural or forestry tractor</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catK" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col-noimage">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : K</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catK" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive a mowing machine or vehicles controlled by someone on foot</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catL" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col-noimage">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : L</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catL" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive an electrically-propelled vehicle</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catN" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col-noimage">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : N</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catN" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive vehicles exempt from Vehicle Excise Duty</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catP" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : P</strong></li>
+                                
+                                <li class="valid-dates">Start date: 14 Aug 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category P vehicle" src="/assets/img/categories/P.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catP" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 14 Aug 1991</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive motor vehicles with fewer than 4 wheels with a maximum design speed exceeding 45 kilometres per hour (km/h) but not exceeding 50km/h and which, if propelled by an internal combustion engine, has a cylinder capacity not exceeding 50cc</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <div class="accordion-group">
+                <a href="#catQ" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col-noimage">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : Q</strong></li>
+                                
+                                <li class="valid-dates">Start date: 15 Oct 2013</li>
+                                <li class="valid-dates">End date: 1 Oct 2043
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            <div id="#catQ" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 15 Oct 2013</li>
+                            <li>End date: 1 Oct 2043
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive motor vehicles with fewer than 4 wheels which, if propelled by an internal combustion engine, has a cylinder capacity not exceeding 50cc and, if not equipped with pedals by means of which the vehicle is capable of being propelled, has a maximum design speed not exceeding 25km/h</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li>
+                                <strong>01</strong>
+                                
+                                Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+    </ul>
+    
+
+
+
+    
+    <h2>Vehicles you can provisionally drive</h2>
+    <ul class="accordion" id="provEntitlements">
+        
+        <li>
+            
+            <div class="accordion-group">
+                <a href="#catA" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : A</strong></li>
+                                
+                                <li class="valid-dates">Start date: 1 Apr 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043</li>
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                        <img alt="Image of category A vehicle" src="/assets/img/categories/A.png" class="category-img" />
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            
+            <div id="catA" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 1 Apr 1991</li>
+                            <li>End date: 1 Oct 2043 </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive a motorcycle of a power exceeding 35kW or with a power to weight ratio exceeding 0.2kW per kg, or A motorcycle of a power not exceeding 35kW with a power to weight ratio not exceeding 0.2kW per kg and derived from a vehicle of more than double its power. A motor tricycle with a power exceeding 15kW</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li> <strong>01</strong> 
+                            Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            
+            <div class="accordion-group">
+                <a href="#catG" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col-noimage">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : G</strong></li>
+                                
+                                <li class="valid-dates">Start date: 1 Apr 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043</li>
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            
+            <div id="catG" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 1 Apr 1991</li>
+                            <li>End date: 1 Oct 2043 </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive a road roller</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li> <strong>01</strong> 
+                            Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            
+            <div class="accordion-group">
+                <a href="#catH" class="toggle">
+                    <div class="detail-wrapper">
+                        
+                        <div class="detail-col-noimage">
+                        
+                            <ul class="detail">
+                                <li class="category"><strong>Category : H</strong></li>
+                                
+                                <li class="valid-dates">Start date: 1 Apr 1991</li>
+                                <li class="valid-dates">End date: 1 Oct 2043</li>
+                                
+                                
+                                
+                                <li class="restriction">Restrictions apply</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  <span class="img-holder">
+                    
+                  </span>
+                  <span class="more">
+                    <span class="up"></span> <em>Show information <img alt="" src="/assets/img/circle-plus@2x.png" width="16px"></em>
+                  </span>
+                </a>
+            </div>
+            
+            <div id="catH" class="accordion-content">
+                <ul class="grid drive">
+                    
+                    
+                    <li class="valid-dates">
+                        <h4>Dates</h4>
+                        <ul>
+                            <li>Start date: 1 Apr 1991</li>
+                            <li>End date: 1 Oct 2043 </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="description">
+                        <h4>Description</h4>
+                        <p>You can drive tracked vehicles</p>
+                    </li>
+                    
+                    <li class="restriction">
+                        <h4>Restriction codes</h4>
+                        <ol class="list-unstyled">
+                            
+                            <li> <strong>01</strong> 
+                            Eyesight Correction</li>
+                            
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+    </ul>
+    
+    
+    
+</div>
+
+
+
+
+
+<div id="points" class="">
+    <div>
+        <p>To find out more visit the <a href="https://www.gov.uk/penalty-points-endorsements" target="_blank">penalty points</a> and <a href="https://www.gov.uk/driving-disqualifications" target="_blank">disqualifications</a> sections on GOV.UK</p>
+    </div>
+    <h2>
+        <span>You have</span>0 current penalty points</h2>
+    
+
+    
+
+    
+</div>
+
+
+
+
+
+
+</div>
+
+        </article>
+    </main>
+</div>
+
+
+
+<footer class="group js-footer" id="footer" role="contentinfo"><div class="footer-wrapper">
+    <div class="footer-meta">
+        <div class="footer-meta-inner">
+            <h2 class="visuallyhidden">Support links</h2>
+            <ul>
+                <li><a href="https://www.gov.uk/help/cookies" target="_blank">Cookies</a></li>
+                <li><a href="/termsandconditions">Terms &amp; Conditions</a></li>
+                <li><a href="/privacypolicy">Privacy Policy</a></li>
+                <li><a href="/cymraeg">Cymraeg</a></li>
+                <li>Built by the <a href="https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency">Driver and Vehicle Licensing Agency</a></li>
+            </ul>
+            <div class="open-government-licence">
+                <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2" target="_blank"><img alt="OGL" src="https://assets.digital.cabinet-office.gov.uk/static/open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png"></a></h2>
+                <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2" target="_blank">Open Government Licence v2.0</a>, except where otherwise stated</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm" target="_blank">&copy; Crown Copyright</a>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+
+  
+
+
+ <script type="text/javascript" data-main="/assets/javascripts-min/driverDetailsModule" src="/assets/javascripts/require.js"></script>
+
+
+<script src="/assets/javascripts/analytics_event_tracker.js" type="text/javascript"></script>
+</body>
+</html>
+

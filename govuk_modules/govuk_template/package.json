@@ -1,0 +1,44 @@
+{
+  "name": "govuk_template_mustache",
+  "version": "0.8.1",
+  "description": "{{ mustache }} packaged version of the GOV.UK template",
+  "keywords": [
+    "alphagov",
+    "govuk",
+    "mustache",
+    "template"
+  ],
+  "bugs": {
+    "url": "https://github.com/alphagov/govuk_template_mustache/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Government Digital Service developers",
+    "url": "https://gds.blog.gov.uk/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/alphagov/govuk_template_mustache.git"
+  },
+  "homepage": "https://github.com/alphagov/govuk_template_mustache",
+  "_id": "govuk_template_mustache@0.8.1",
+  "dist": {
+    "shasum": "fb1554483b4e375ee79154a47e25d2f2e524b77d",
+    "tarball": "http://registry.npmjs.org/govuk_template_mustache/-/govuk_template_mustache-0.8.1.tgz"
+  },
+  "_from": "govuk_template_mustache@0.8.1",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "alphagov",
+    "email": "govuk-dev@digital.cabinet-office.gov.uk"
+  },
+  "maintainers": [
+    {
+      "name": "alphagov",
+      "email": "govuk-dev@digital.cabinet-office.gov.uk"
+    }
+  ],
+  "directories": {},
+  "_shasum": "fb1554483b4e375ee79154a47e25d2f2e524b77d",
+  "_resolved": "https://registry.npmjs.org/govuk_template_mustache/-/govuk_template_mustache-0.8.1.tgz"
+}

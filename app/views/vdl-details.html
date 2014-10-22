@@ -1,0 +1,600 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+
+  <script type="text/javascript" src="/public/javascripts/jquery.tabs.js"></script>
+  
+  
+  
+ 
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_vdl}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+		
+		
+	<article>
+
+
+
+	<div id="top-ui-bits" style="padding-top:0.5em">
+		<div class="share-dl" style="float:left">
+			<!-- SHARE LICENCE -->
+		    <p><a href="vdl-share">Share your driving license</a><span class="visuallyhidden"> with a someone</span><br /> 
+		    <span class="form-hint">Example: A hire car company, your doctor or an employer</span></p>
+	    </div>
+
+	    <div style="float:right;padding-top:1.2em">
+	    <fieldset>
+			<div class="form-group">
+			<a href="#" class="button" style="margin-right:0">Logout</a>
+			</div>
+		</fieldset>
+	    </div>
+
+		<br clear="both" />
+	</div>
+
+
+
+
+<div class="js-tabs nav-tabs">
+  <ul class="tabs-nav" role="tablist">
+    <li class="active"><a href="vdl-details" role="tab">Your Details</a></li>
+    <li><a href="vdl-vehicles" role="tab">Vehicles you can drive</a></li>
+    <li><a href="vdl-penalties" role="tab">Penalties and disqualifications</a></li>
+  </ul>
+</div>
+
+<div class="js-tab-content tab-content tabs-body">
+  
+    <div class="js-tab-pane tab-pane tabs-panel tabs-panel-selected" role="tabpanel" id="your-details" style="display:block">
+		    <h2 class="visuallyhidden">Personal Details</h2>
+		    <h2 class="heading-24">Mr Paul John Cleghorn</h2>
+
+		    <ul class="ul-data">
+				<li class="visuallyhidden"><span>Name</span><strong>Mr Paul John Cleghorn</strong></li>
+
+		        <li><span>Date of birth</span><strong>2 Oct 1973</strong></li>
+
+		        <li><span>Gender</span><strong>Male</strong></li>
+
+		        <li><span>Address</span><strong>38 North Street, Fritwell<br />BICESTER &nbsp; OX27 7QR <!-- <a href="change-address-3dl">Change address</a> --></strong></li>
+		    </ul>
+
+
+
+		    <h2 class="heading-24">Licence details</h2>
+		    <ul class="ul-data">
+		        <li><span>Driving status</span><strong>You have a full driving licence</strong></li>
+		        
+		        <li><span>Licence valid from</span><strong>15 Oct 2013</strong></li>
+		        
+		        <li><span>Licence valid to</span><strong>22 Dec 2014 <!-- <a href="#">Renew your license</a> --></strong></li>
+		        
+		        <li><span>Driving licence number</span><strong>CLEGH710023PJ9BL</strong></li>
+		        
+		        <li><span>Licence issue number</span><strong>12</strong></li>
+		        
+		    </ul>
+    </div>
+  
+
+  
+    <div class="js-tab-pane tab-pane tabs-panel" role="tabpanel" id="your-vehicles" style="display:none">
+		    <div>
+				<h2 class="heading-24" style="margin-top:0">Vehicles you can drive</h2>
+
+				<p class="grid-2-3">
+				To find out more visit the <a href="https://www.gov.uk/driving-licence-categories" target="_blank">driving licence categories</a> section on GOV.UK
+				</p>
+			</div>
+			
+			
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/AM.png"></div>
+			<h3 class="vehicle-category">Category : AM</h3>
+			
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive 2-wheel vehicles or 3-wheel vehicles with a maximum design speed of over 25km/h and not more than 45km/h. Light quadricycles with an unladen mass of not more than 350kg, not including the mass of the batteries in the case of electric vehicles, whose maximum speed is over 25km/h and not more than 45km/h</P>
+					
+				</div>
+			</details>
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 15 Oct 2013 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/A.png"></div>
+			<h3 class="vehicle-category">Category : A</h3>
+			
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive a motorcycle of a power exceeding 35kW or with a power to weight ratio exceeding 0.2kW per kg, or A motorcycle of a power not exceeding 35kW with a power to weight ratio not exceeding 0.2kW per kg and derived from a vehicle of more than double its power. A motor tricycle with a power exceeding 15kW</P>
+					
+				</div>
+			</details>
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 19 Jan 2013 to 1 Oct 2043</span><strong>01 Eyesight Correction, 79.03 Limited to tricycles</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/B1.png"></div>
+			<h3 class="vehicle-category">Category : B1</h3>
+			
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive motor vehicles with 4 wheels up to 400kg unladen or 550kg if they're designed for carrying goods</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/B.png"></div>
+			<h3 class="vehicle-category">Category : B</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive vehicles up to 3,500kg Maximum Authorised Mass (MAM) with up to 8 passenger seats and a driver (with a trailer up to 750kg). You can also tow heavier trailers if the total weight of vehicle and trailer isn't more than 3,500kg. Physically disabled drivers with provisional category B entitlement will also have provisional entitlement to ride category A1 or A motor tricycles. Able-bodied drivers can no longer ride motor tricycles with a provisional category B licence</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/BE.png"></div>
+			<h3 class="vehicle-category">Category : BE</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive vehicles up to 3,500kg Maximum Authorised Mass (MAM) with up to 8 passenger seats and a driver with a trailer weighing up to 3,500kg</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/C1.png"></div>
+			<h3 class="vehicle-category">Category : C1</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive vehicles weighing between 3,500 and 7,500kg (with a trailer up to 750kg), with no more than 8 passengers and a driver</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/C1E.png"></div>
+			<h3 class="vehicle-category">Category : C1E</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive vehicles weighing between 3,500 and 7,500kg (with a trailer over 750kg), with no more than 8 passengers and a driver. The combined weight of both can't exceed 12,000kg</P>
+					
+				</div>
+			</details>
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction, 107 Not more than 8250kg</strong></li>
+			</ul>
+
+
+
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/D1.png"></div>
+			<h3 class="vehicle-category">Category : D1</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive vehicles with no more than 16 passenger seats and a driver and with a maximum length not exceeding 8 metres with a trailer up to 750kg</P>
+					
+				</div>
+			</details>
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction, 101 Not for Hire or reward</strong></li>
+			</ul>
+
+			
+
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/D1E.png"></div>
+			<h3 class="vehicle-category">Category : D1E</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive vehicles with no more than 16 passenger seats and a driver and with a maximum length not exceeding 8 metres with a trailer over 750 kg, provided that the Maximum Authorised Mass (MAM) of the combination formed does not exceed 12,000kg</P>
+					
+				</div>
+			</details>
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction, 101 Not for Hire or reward, 119 Weight limit does not apply</strong></li>
+			</ul>
+
+			
+
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/F.png"></div>
+			<h3 class="vehicle-category">Category : F</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive an agricultural or forestry tractor</P>
+					
+				</div>
+			</details>
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/K.png"></div>
+			<h3 class="vehicle-category">Category : K</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive a mowing machine or vehicles controlled by someone on foot</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/L.png"></div>
+			<h3 class="vehicle-category">Category : L</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive an electrically-propelled vehicle</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/N.png"></div>
+			<h3 class="vehicle-category">Category : N</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive vehicles exempt from Vehicle Excise Duty</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/P.png"></div>
+			<h3 class="vehicle-category">Category : P</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive motor vehicles with fewer than 4 wheels with a maximum design speed exceeding 45 kilometres per hour (km/h) but not exceeding 50km/h and which, if propelled by an internal combustion engine, has a cylinder capacity not exceeding 50cc</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 14 Aug 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/Q.png"></div>
+			<h3 class="vehicle-category">Category : Q</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive motor vehicles with fewer than 4 wheels which, if propelled by an internal combustion engine, has a cylinder capacity not exceeding 50cc and, if not equipped with pedals by means of which the vehicle is capable of being propelled, has a maximum design speed not exceeding 25km/h</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 15 Oct 2013 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div id="your-provisional-vehicles">
+				<h2 class="heading-24">Vehicles you can provisionally drive</h2>
+			</div>
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/A.png"></div>
+			<h3 class="vehicle-category">Category : A</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive a motorcycle of a power exceeding 35kW or with a power to weight ratio exceeding 0.2kW per kg, or A motorcycle of a power not exceeding 35kW with a power to weight ratio not exceeding 0.2kW per kg and derived from a vehicle of more than double its power. A motor tricycle with a power exceeding 15kW</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 1 Apr 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/G.png"></div>
+			<h3 class="vehicle-category">Category : G</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive a road roller</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 1 Apr 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+
+			
+
+
+
+			<div class="vehicle-icon"><img src="/public/images/vehicle-icons/H.png"></div>
+			<h3 class="vehicle-category">Category : H</h3>
+
+			<details style="" >
+				<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+					<span class="summary">Show information</span>
+				</summary>
+				<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+				
+				<P>You can drive tracked vehicles</P>
+					
+				</div>
+			</details>
+
+
+			<ul class="ul-data tight">
+				
+				<li><span>from 1 Apr 1991 to 1 Oct 2043</span><strong>01 Eyesight Correction</strong></li>
+			</ul>
+    </div>
+  
+
+  
+    <div class="js-tab-pane tab-pane tabs-panel" role="tabpanel" id="your-penalties" style="display:none">
+			<h2 class="heading-24">Penalties and disqualifications</h2>
+
+			<p>To find out more visit the <a href="#">penalty points</a> and <a href="#">disqualifications</a> parts of GOV.UK</p>
+
+			<h3 class="vehicle-category">You have 0 current penalty points</h3>
+    </div>
+  
+</div>
+
+
+
+
+	
+
+
+
+</article>		
+
+<!-- hide this next action button 
+<form action="get" class="form" style="margin-top:2.5em">
+	<fieldset>
+		<div style="float:left;padding-right:1em">
+		  <input type="submit" class="button" value="Finish">
+		</div>
+	  
+
+		<div>
+		  <p><a href="transfer-3">
+			Search for another vehicle
+		</a></p>
+		</div>
+
+	</fieldset>
+</form>
+-->
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}
