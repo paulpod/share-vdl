@@ -1,0 +1,99 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  
+  
+ 
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_vdl-verify}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+		<!-- <a class="back-to-previous" href="#">Exit<span class="visuallyhidden"> to the start page</span></a> -->
+
+		
+		
+		
+		<article>
+		
+
+		<div style="margin-top:3em" class="grid grid-2-3">
+
+		<p>
+		You should only use this service to verify a driving licence shared with you.
+		</p>
+
+
+		<fieldset style="margin-top:1em">
+
+			<div class="form-group">
+				<label class="form-label" for="dln">A driving licence number (last 8 digits only)</label>
+				<input type="text" class="form-control form-control-1-4" id="dln">
+				<span style="margin-left:1.2em"><a href="#"> Where to find this</a></span>
+				<!-- <p class="form-hint">Example: XXXXXXXX</p> -->
+			</div>
+
+			<div class="form-group">
+				<label class="form-label" for="accesscode">The shared access code</label>
+				<input type="text" class="form-control form-control-1-4" id="accesscode">
+				<span style="margin-left:1.2em"><a href="#"> Where to find this</a></span>
+				<!-- <p class="form-hint">Example: XXXXXXXX</p> -->
+			</div>
+
+		</fieldset>
+
+
+
+
+		<fieldset>
+			<div class="form-group">
+			<a href="verify-vdl-view" class="button">View now</a>
+			</div>
+		</fieldset>
+
+
+
+		</div>
+
+
+
+
+
+		<div style="margin-top:7em" class="grid grid-1-3">
+
+			<img src="/public/images/find-vdl-share-number.jpg">
+
+		</div>
+
+
+		</article>		
+
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}
