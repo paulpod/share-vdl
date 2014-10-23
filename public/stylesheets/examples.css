@@ -38,8 +38,7 @@ main.area {
     padding-top: 45px;
     padding-right: 30px;
     padding-bottom: 30px;
-    padding-left: 30px; }
- }
+    padding-left: 30px; } }
 
 .example:before {
   content: "EXAMPLE";
@@ -49,7 +48,7 @@ main.area {
   padding: 0.21053em 0.78947em 0.21053em 0.78947em;
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.4285714286;
+  line-height: 1.42857;
   font-weight: 400;
   text-transform: none;
   background: #bfc1c3;
@@ -58,8 +57,7 @@ main.area {
 @media (max-width: 640px) {
   .example:before {
     font-size: 12px;
-    line-height: 1.25; }
- }
+    line-height: 1.25; } }
 
 .example .highlight {
   font-style: normal;
@@ -75,8 +73,7 @@ main.area {
 
 @media (min-width: 641px) {
   .example-grid p {
-    min-height: 60px; }
- }
+    min-height: 60px; } }
 
 .swatch {
   width: 60px;
@@ -90,13 +87,11 @@ main.area {
     clear: both;
     float: left;
     margin-right: 15px;
-    margin-bottom: 15px; }
- }
+    margin-bottom: 15px; } }
 
 @media (min-width: 641px) {
   .swatch {
-    margin: 0 auto 15px auto; }
- }
+    margin: 0 auto 15px auto; } }
 
 .swatch-purple {
   background-color: #2e358b; }
@@ -209,8 +204,7 @@ main.area {
   .swatch-wrapper {
     float: left;
     width: 20%;
-    text-align: center; }
- }
+    text-align: center; } }
 
 .swatch-wrapper .heading-small {
   margin-bottom: 0.52632em; }
@@ -221,8 +215,7 @@ main.area {
 @media (max-width: 640px) {
   .swatch-wrapper ul {
     min-height: 50px;
-    padding-top: 10px; }
- }
+    padding-top: 10px; } }
 
 .swatch-wrapper li {
   font-family: "nta", Arial, sans-serif;
@@ -234,8 +227,7 @@ main.area {
 @media (max-width: 640px) {
   .swatch-wrapper li {
     font-size: 14px;
-    line-height: 1.1428571429; }
- }
+    line-height: 1.14286; } }
 
 .swatch-wrapper b {
   font-weight: bold;

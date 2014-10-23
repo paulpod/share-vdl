@@ -13,15 +13,6 @@ em.bold {
 @-o-viewport {
   width: device-width; }
 
-@font-face {
-  font-family: GDS-Logo;
-  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
-
-@-ms-viewport {
-  width: device-width; }
-
-@-o-viewport {
-  width: device-width; }
 
 @font-face {
   font-family: GDS-Logo;
@@ -33,6 +24,47 @@ em.bold {
 @-o-viewport {
   width: device-width; }
 
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+
+
+
+
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+
 @-ms-viewport {
   width: device-width; }
 
@@ -51,29 +83,10 @@ em.bold {
 @-o-viewport {
   width: device-width; }
 
-@-ms-viewport {
-  width: device-width; }
 
-@-o-viewport {
-  width: device-width; }
 
-@-ms-viewport {
-  width: device-width; }
 
-@-o-viewport {
-  width: device-width; }
 
-@-ms-viewport {
-  width: device-width; }
-
-@-o-viewport {
-  width: device-width; }
-
-@-ms-viewport {
-  width: device-width; }
-
-@-o-viewport {
-  width: device-width; }
 
 .example-highlight-grid .grid-wrapper {
   background: #bfc1c3; }
@@ -103,7 +116,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
 #content {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.3157894737;
+  line-height: 1.31579;
   font-weight: 400;
   text-transform: none;
   -webkit-font-smoothing: antialiased; }
@@ -115,7 +128,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
 .heading-xlarge, .heading-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
-  line-height: 1.0416666667;
+  line-height: 1.04167;
   font-weight: 700;
   text-transform: none;
   margin-top: 15px;
@@ -132,19 +145,19 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
     display: block;
     font-family: "nta", Arial, sans-serif;
     font-size: 27px;
-    line-height: 1.1111111111;
+    line-height: 1.11111;
     font-weight: 400;
     text-transform: none;
     color: #6f777b; }
     @media (max-width: 640px) {
       .heading-xlarge .heading-27, .heading-48 .heading-27 {
         font-size: 20px;
-        line-height: 1.1111111111; } }
+        line-height: 1.11111; } }
 
 .heading-large, .heading-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
-  line-height: 1.1111111111;
+  line-height: 1.11111;
   font-weight: 700;
   text-transform: none;
   margin-top: 25px;
@@ -152,7 +165,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
   @media (max-width: 640px) {
     .heading-large, .heading-36 {
       font-size: 24px;
-      line-height: 1.0416666667; } }
+      line-height: 1.04167; } }
   @media (min-width: 641px) {
     .heading-large, .heading-36 {
       margin-top: 45px;
@@ -178,7 +191,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
 .heading-small, .heading-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.3157894737;
+  line-height: 1.31579;
   font-weight: 700;
   text-transform: none;
   margin-top: 10px;
@@ -215,7 +228,7 @@ p, pre {
   @media (max-width: 640px) {
     .copy-16 {
       font-size: 14px;
-      line-height: 1.1428571429; } }
+      line-height: 1.14286; } }
 
 .text {
   max-width: 30em; }
@@ -229,12 +242,12 @@ p, pre {
   @media (max-width: 640px) {
     .data-80 {
       font-size: 53px;
-      line-height: 1.0377358491; } }
+      line-height: 1.03774; } }
 
 .data-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
-  line-height: 1.0416666667;
+  line-height: 1.04167;
   font-weight: 700;
   text-transform: none;
   line-height: 0.9; }
@@ -252,7 +265,7 @@ p, pre {
   @media (max-width: 640px) {
     .data p {
       font-size: 14px;
-      line-height: 1.1428571429; } }
+      line-height: 1.14286; } }
 
 #wrapper {
   text-align: center;
@@ -314,7 +327,7 @@ p, pre {
   width: 100%; }
   @media (min-width: 641px) {
     .grid-1-3 {
-      width: 33.333333333%; } }
+      width: 33.33333%; } }
 
 .grid-1-2 {
   width: 100%; }
@@ -326,7 +339,7 @@ p, pre {
   width: 100%; }
   @media (min-width: 641px) {
     .grid-2-3 {
-      width: 66.666666667%; } }
+      width: 66.66667%; } }
 
 .grid-3-4 {
   width: 100%; }
@@ -357,13 +370,13 @@ fieldset, legend {
 .form-label, .date-of-birth legend {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.3157894737;
+  line-height: 1.31579;
   font-weight: 400;
   text-transform: none;
   display: block;
   margin-bottom: 10px; }
   @media (max-width: 640px) {
-    .form-label, .date-of-birth legend {
+    .form-label {
       font-size: 16px;
       line-height: 1.25; } }
 
@@ -455,7 +468,7 @@ fieldset, legend {
   @media (max-width: 640px) {
     .validation-summary li, .validation-summary p {
       font-size: 14px;
-      line-height: 1.1428571429; } }
+      line-height: 1.14286; } }
 
 .validation-summary p {
   margin-top: 15px;
@@ -493,7 +506,8 @@ fieldset, legend {
   @media (max-width: 640px) {
     .validation-message {
       font-size: 14px;
-      line-height: 1.1428571429; } }
+      line-height: 1.14286; } }
+
 
 .date-of-birth label {
   display: block;
@@ -579,7 +593,7 @@ table th, table td {
   @media (max-width: 640px) {
     table th, table td {
       font-size: 14px;
-      line-height: 1.1428571429; } }
+      line-height: 1.14286; } }
 
 table th {
   font-weight: 700; }
@@ -686,7 +700,7 @@ table td {
 .get-started .destination {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.4285714286;
+  line-height: 1.42857;
   font-weight: 400;
   text-transform: none;
   color: #2e3133;
@@ -701,7 +715,7 @@ table td {
 .button-link {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.3157894737;
+  line-height: 1.31579;
   font-weight: 400;
   text-transform: none;
   background: none;

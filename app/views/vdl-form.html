@@ -1,0 +1,107 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  
+  
+ 
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_vdl}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+
+
+		
+	<article>
+		
+
+		<div style="margin-top:3em">
+
+			<p>
+			You should only use this service to view your own driving licence.
+			</p>
+
+
+			<fieldset style="margin-top:1em">
+
+				<div class="form-group">
+					<label class="form-label" for="dln">Your driving licence number</label>
+					<input type="text" class="form-control form-control-1-2" id="dln">
+					<span style="margin-left:1.2em"><a href="#"> Where to find this</a></span>
+					<p class="form-hint">Example: MORGA657054SM9IJ</p>
+				</div>
+
+				<div class="form-group">
+					<label class="form-label" for="nino">Your National Insurance number</label>
+					<input type="text" class="form-control form-control-1-2" id="nino">
+					<span style="margin-left:1.2em"><a href="#"> Where to find this</a></span>
+					<p class="form-hint">Example: QQ123456C</p>
+				</div>
+
+				<div class="form-group">
+					<label class="form-label" for="postcode">Postcode</label>
+					<input type="text" class="form-control form-control-1-4" id="postcode">
+					<p class="form-hint">Example: EH1 9SP</p>
+				</div>
+
+			</fieldset>
+
+			<br clear="all">
+
+
+
+			<div class="disclaimer-box">
+
+			<p><input type="checkbox" id="dwpPermission" name="dwpPermission" value="1">
+
+
+			By ticking this box, you are providing the Driver and Vehicle Licensing Agency (DVLA) with your consent to check your personal details including your National Insurance number with the Department for Work and Pensions and Her Majesty's Revenue and Customs to help verify your identity. If you do not wish to tick this box, the DVLA will be unable to verify your identity and you will not be able to use this service. For more information on how the DVLA will use your information and the alternative ways of accessing this service please see our privacy policy.</p>
+			</div>
+
+
+
+			<fieldset>
+				<div class="form-group">
+				<a href="vdl-details" class="button">View now</a>
+				</div>
+			</fieldset>
+
+
+			<p>
+			Don't know your driving licence number? <a href="#">Search for your licence using your personal details</a>. <br >
+			Alternatively, you can return to the <a href="#">Start Now</a> page.</p>
+
+			</div>
+
+
+		</article>		     
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}
