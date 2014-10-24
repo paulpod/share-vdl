@@ -1555,7 +1555,31 @@ aside .page-navigation-closed {
 .button-link:focus {
   outline: 3px solid #ffbf47; }
 
+/* VDL parts for Abolition of Counterpart demo */
 .disclaimer-box {
   background-color: #D5E8F3;
   padding: 1em 2em 0.5em 1em;
   margin: 0 5em 2em 0; }
+
+.vdl-cat-pic {
+  width: 31%;
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 2em; }
+
+.summarybox-green {
+  float: left;
+  width: 30%;
+  background-color: #399;
+  margin-right: 1.5em; }
+
+.summarybox-title {
+  color: #fff;
+  background-color: #288;
+  padding: 0.4em 0.2em 0.4em 0.5em;
+  font-weight: 700;
+  margin-top: 0; }
+
+.summarybox-text {
+  color: #fff;
+  padding: 0.4em 0.2em 0.4em 0.5em; }
