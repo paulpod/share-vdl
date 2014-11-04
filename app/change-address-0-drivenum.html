@@ -1,0 +1,154 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+ 
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  <script  type="text/javascript" src="/public/javascripts/Chart.js"></script>
+  
+  
+ 
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+    		<a class="back-to-previous" href="#">Back<span class="visuallyhidden"> to your driving licence</span></a>
+
+		
+		
+		
+	<article>
+	
+	
+	<h1 class="heading-36">
+	Change address
+	</h1>
+
+
+
+
+
+
+
+
+
+	<div id="your-details">
+
+
+	<!-- <ul class="ul-data">
+
+		<li><span>Licence valid from</span><strong>15 Oct 2013</strong></li>
+
+		<li><span>Licence valid to</span><strong>22 Dec 2014 </strong></li>
+
+		<li><span>Driving licence number</span><strong>CLEGH710023PJ9BL</strong></li>
+
+		<li><span>Licence issue number</span><strong>12</strong></li>
+
+	</ul>
+
+	-->
+
+    
+   
+    
+    
+	<!-- end #your-details -->
+
+
+
+
+	<fieldset>
+
+		<div class="form-group">
+			<label class="form-label" for="address-postcode"><h2 class="heading-19">Your driver number</h2></label>
+			<input type="text" class="form-control form-control-1-4" id="address-postcode">
+			<!-- <p class="form-hint">E.g. PR2 8AE or PR28AE</p> -->
+		</div>
+
+
+		<details style="padding-bottom:2em" class="grid grid-2-3">
+		<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+			<span class="summary">Help finding your driver number</span>
+		</summary>
+		<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+		
+		<P>This is 16 characters long, made up of letters and numbers on the front of the driving licence photocard and the paper counterpart. </P>
+
+		<p><img src="/public/images/photocard-driver-number.png" width="255" height="50"></p>
+			
+		</div>
+		</details>
+
+
+		<div class="form-group">
+		<a href="change-address-1" class="button">Next</a>
+		</div>
+
+		
+
+	</fieldset>
+
+
+
+
+	
+	
+	
+
+	
+
+
+
+</article>		
+
+<!-- hide this next action button 
+<form action="get" class="form" style="margin-top:2.5em">
+	<fieldset>
+		<div style="float:left;padding-right:1em">
+		  <input type="submit" class="button" value="Finish">
+		</div>
+	  
+
+		<div>
+		  <p><a href="transfer-3">
+			Search for another vehicle
+		</a></p>
+		</div>
+
+	</fieldset>
+</form>
+-->
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

@@ -1,0 +1,142 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+    <a class="back-to-previous" href="change-address-3">Back <span class="visuallyhidden"> to the previous question</span></a>
+
+		
+	<article>
+	
+	
+	<h1 class="heading-36">
+	Change address
+	</h1>
+
+
+
+
+
+
+
+
+
+	<div id="your-details">
+
+
+	
+    
+    <h2 class="heading-19">Old address</h2>
+
+    <p>
+	38 North Street,<br />
+    Fritwell<br />
+    BICESTER<br />
+    OX27 7QR</p>
+
+	</div>
+
+
+	<!-- end #your-details -->
+
+
+
+
+	<fieldset>
+
+		<div class="form-group">
+			<label class="form-label" for="address-postcode"><h2 class="heading-19">New postcode</h2></label>
+			<input type="text" class="form-control form-control-1-4" value="SA15 5LP" id="address-postcode">
+			<!-- <p class="form-hint">E.g. PR2 8AE or PR28AE</p> -->
+			<span style="padding-left:2em"><a href="#">Find a different address</a></span>
+		</div>
+
+
+
+		
+
+		<fieldset>
+
+		<label for="address_uprn">
+			<span class="visuallyhidden">Select your </span>Address
+		</label>
+
+		
+
+		<div class="validation-wrapper ">
+			<select id="address_uprn" name="address.uprn" class="lonely validate " data-validation-name="addressSelect" data-validation-type="field" data-validation-rules="nonEmpty">
+				<option value="">4 addresses found</option>
+				<option value="10009172278">Pantyffynnon Farm, Pontyberem, Llanelli, Carmarthenshire</option>
+				<option value="10004881783">Plas Uchaf, Pontyberem, Llanelli, Carmarthenshire</option>
+				<option value="10004881784">Ty Newydd Farm, Pontyberem, Llanelli, Carmarthenshire</option>
+				<option value="10004881785">Tyn Ton Farm, Pontyberem, Llanelli, Carmarthenshire</option>
+			</select>
+		</div>
+
+		<a href="change-address-3-manual" class="toggle">
+			I can’t find my address in the list<span class="visuallyhidden"> section</span>
+		</a>
+
+		</fieldset>
+
+
+
+		
+
+		
+
+
+		<div class="form-group" style="padding-top:2em">
+			<a href="change-address-5" class="button">Continue</a>
+		</div>
+
+
+
+
+	
+	
+	
+
+	
+
+
+
+</article>		
+
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

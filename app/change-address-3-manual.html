@@ -1,0 +1,203 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  <script>
+  		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+  		var lineChartData = {
+  			labels : ["1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014"],
+  			datasets : [
+  				{
+  					label: "Mileage",
+  					fillColor : "rgba(220,220,220,0.2)",
+  					strokeColor : "rgba(48,162,151,1)",
+  					pointColor : "rgba(27,131,121,1)",
+  					pointStrokeColor : "#fff",
+  					pointHighlightFill : "#222",
+  					pointHighlightStroke : "rgba(220,220,220,1)",
+  					data : [3,26618,39491,59635,79896,90567,109254,119254,157422,169570,176480,178128,180007,181178,183018,186307,186318,186828]
+  				}
+  			]
+
+  		}
+		
+		
+		
+
+	  	window.onload = function(){
+	  		var ctx = document.getElementById("canvas").getContext("2d");
+	  		window.myLine = new Chart(ctx).Line(lineChartData, {
+	  			responsive: true
+	  		});
+	  	}
+		
+	  	
+
+
+  	</script>
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  <script  type="text/javascript" src="/public/javascripts/Chart.js"></script>
+  
+  
+ 
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+	<a class="back-to-previous" href="change-address-2">Back <span class="visuallyhidden"> to the previous question</span></a>
+
+		
+	<article>
+	
+	
+	<h1 class="heading-36">
+	Change address
+	</h1>
+
+
+
+
+
+
+
+
+
+	<div id="your-details">
+
+
+	<!-- <ul class="ul-data">
+
+		<li><span>Licence valid from</span><strong>15 Oct 2013</strong></li>
+
+		<li><span>Licence valid to</span><strong>22 Dec 2014 </strong></li>
+
+		<li><span>Driving licence number</span><strong>CLEGH710023PJ9BL</strong></li>
+
+		<li><span>Licence issue number</span><strong>12</strong></li>
+
+	</ul>
+
+	-->
+
+    
+   
+    
+    <h2 class="heading-19">Old address</h2>
+
+    <p>
+    38 North Street,<br />
+    Fritwell<br />
+    BICESTER<br />
+    OX27 7QR</p>
+
+	</div>
+
+
+	<!-- end #your-details -->
+
+
+
+
+	<fieldset>
+		
+
+		<fieldset class="validate" data-validation-name="addressManual" data-validation-type="fieldset" data-validation-rules="atLeastOneTextEntry atLeastOneValid" data-validation-children="manualAddressMultiline city">
+        
+        <div class="validation-wrapper ">
+            <fieldset class="multi-line-field validate" data-validation-name="manualAddressMultiline" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="manualAddressLineOne manualAddressLineTwo manualAddressLineThree">
+                <legend class="label">
+                    <h2 class="heading-19">New address</h2>
+                </legend>
+                <label for="address_manualAddress_lineOne" class="visuallyhidden">Address line one</label>
+                <input type="text" id="address_manualAddress_lineOne" name="address.manualAddress.lineOne" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineOne" data-validation-type="field" data-validation-rules="nonEmpty"><br />
+                <label for="address_manualAddress_lineTwo" class="visuallyhidden">Address line two</label>
+                <input type="text" id="address_manualAddress_lineTwo" name="address.manualAddress.lineTwo" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineTwo" data-validation-type="field" data-validation-rules="nonEmpty"><br />
+                <label for="address_manualAddress_lineThree" class="visuallyhidden">Address line three</label>
+                <input type="text" id="address_manualAddress_lineThree" name="address.manualAddress.lineThree" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineThree" data-validation-type="field" data-validation-rules="nonEmpty"><br />
+            </fieldset>
+        </div>
+        <label for="address_manualAddress_city">Town or city</label>
+        <div class="validation-wrapper ">
+            <input type="text" id="address_manualAddress_city" name="address.manualAddress.city" value="" class="text long validate " autocomplete="off" data-validation-name="city" data-validation-type="field" data-validation-rules="nonEmpty"><br />
+        </div>
+
+        <label for="address_manualAddress_city">Postcode</label>
+
+        <input type="text" class="form-control form-control-1-4" id="address-postcode"><br />
+
+    </fieldset>
+
+
+		<div class="form-group" style="padding-top:2em">
+		<a href="change-address-4" class="button">Continue</a>
+		</div>
+
+		<p><a href="change-address-3">Find address using the postcode</a></p>
+
+		<p><a href="#">Use a BFPO address</a></p>
+
+	</fieldset>
+
+
+
+
+	
+	
+	
+
+	
+
+
+
+</article>		
+
+<!-- hide this next action button 
+<form action="get" class="form" style="margin-top:2.5em">
+	<fieldset>
+		<div style="float:left;padding-right:1em">
+		  <input type="submit" class="button" value="Finish">
+		</div>
+	  
+
+		<div>
+		  <p><a href="transfer-3">
+			Search for another vehicle
+		</a></p>
+		</div>
+
+	</fieldset>
+</form>
+-->
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

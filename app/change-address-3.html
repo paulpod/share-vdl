@@ -1,0 +1,145 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+ 
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+
+  <script type="text/javascript" src="/public/javascripts/jquery.postcodes.min.js"></script>
+   
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+	<a class="back-to-previous" href="change-address-2">Back <span class="visuallyhidden"> to the previous question</span></a>
+
+		
+	<article>
+	
+	
+	<h1 class="heading-36">
+	Change address
+	</h1>
+
+
+
+
+
+
+
+
+
+	<div id="your-details">
+
+
+	<!-- <ul class="ul-data">
+
+		<li><span>Licence valid from</span><strong>15 Oct 2013</strong></li>
+
+		<li><span>Licence valid to</span><strong>22 Dec 2014 </strong></li>
+
+		<li><span>Driving licence number</span><strong>CLEGH710023PJ9BL</strong></li>
+
+		<li><span>Licence issue number</span><strong>12</strong></li>
+
+	</ul>
+
+	-->
+
+    
+   
+    
+    <h2 class="heading-19">Old address</h2>
+
+    <p>
+    38 North Street,<br />
+    Fritwell<br />
+    BICESTER<br />
+    OX27 7QR</p>
+
+	</div>
+
+
+	<!-- end #your-details -->
+
+
+
+
+	<fieldset>
+
+
+
+	
+
+		<div class="form-group">
+			<label class="form-label" for="address-postcode"><h2 class="heading-19">New postcode</h2></label>
+			<input type="text" class="form-control form-control-1-4" id="address-postcode">
+		</div>
+
+
+		<div class="form-group">
+		<a href="change-address-4" class="button">Find address</a>
+		</div>
+
+		
+		<p style="margin-top:2em"><a href="change-address-3-manual">Enter address manually</a></p>
+
+		<p><a href="#">Use a BFPO address</a></p>
+
+	</fieldset>
+
+
+
+
+	
+	
+	
+
+	
+
+
+
+</article>		
+
+<!-- hide this next action button 
+<form action="get" class="form" style="margin-top:2.5em">
+	<fieldset>
+		<div style="float:left;padding-right:1em">
+		  <input type="submit" class="button" value="Finish">
+		</div>
+	  
+
+		<div>
+		  <p><a href="transfer-3">
+			Search for another vehicle
+		</a></p>
+		</div>
+
+	</fieldset>
+</form>
+-->
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}
